@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.4">
+<title>rusradiostars.ru в разработке</title>
+<link rel="stylesheet" href="tmp.css">
+<script>
+function rot() {var cls = ro.className; if (cls == 'rot') ro.className = ''; else ro.className = 'rot';}
+window.addEventListener('load', function() {ro = document.querySelector('.logo span');  window.addEventListener('keyup', function(event) {if (event.keyCode == 112) rot()}, false); document.querySelector('.logo span').onclick = function()  {rot()}}, false);
+</script>
+<style>
+@font-face {
+	font-family: 'ultra';
+	src: url('font/ultralight.eot');
+    src: url('font/ultralight.eot?#iefix') format('embedded-opentype'),
+         url('font/ultralight.woff2') format('woff2'),
+         url('font/ultralight.woff') format('woff'),
+         url('font/ultralight.ttf') format('truetype'),
+         url('font/ultralight.svg#helveticaneuecyrfont/ultralight') format('svg');
+}
+
+@font-face {
+	font-family: 'thin';
+	src: url('font/thin.eot');
+    src: url('font/thin.eot?#iefix') format('embedded-opentype'),
+         url('font/thin.woff2') format('woff2'),
+         url('font/thin.woff') format('woff'),
+         url('font/thin.ttf') format('truetype'),
+         url('font/thin.svg#helveticaneuecyrfont/thin') format('svg');
+}
+
+html, body {margin: 0; padding: 0;}
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a {color: white; text-decoration: none;}
+a:visited {color: white;}
+
+body {background: 0 0 url('img/bg.jpg') repeat;}
+
+.wrap, footer {
+	width: 100%;
+	max-width: 1178px;
+}
+
+.wrap {
+	width: 100%;
+	max-width: 1178px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-bottom: 60px;
+	transform: translate(-50%, -50%);
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid #111;
+	border-bottom: 1px solid #2E2E2E;
+}
+
+.line.top {margin-bottom: 50px;}
+.line.bottom {margin-top: 50px;}
+
+.fakeinput {
+	background-color: white;
+	color: #999;
+	padding: 13px;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.05);
+	-webkit-animation: fadein 3s ease-out 1;
+	animation: fadein 3s ease-out 1;
+}
+@-webkit-keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.fakeinput .icon, .fakeinput.text {float: left; height: 88px;}
+.fakeinput .icon {
+	border-right: 1px solid #DDD;
+	padding: 17px 17px 17px 10px;
+}
+.fakeinput .icon > span {
+	background: 0 0 url('img/sprite.png') no-repeat;
+	width: 53px;
+	height: 53px;
+	display: inline-block;
+}
+.fakeinput .text {
+	font: 58px/88px ultra;
+	padding-left: 102px;
+	letter-spacing: -0.03em;
+}
+
+.info {
+	margin-top: 52px;
+	font-size: 35px;
+	font-family: thin;
+	letter-spacing: -0.03em;
+	color: white;
+	text-align: center;
+}
+
+.logo {
+	width: 237px;
+	height: 237px;
+	text-align: center;
+	margin: 60px auto 0;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	display: table;
+}
+.logo span {
+	display: table-cell;
+	width: 194px;
+	height: 62px;
+	text-align: center;
+	vertical-align: middle;
+	transition: transform 0.5s linear;
+}
+.logo span.rot {transform: rotate(360deg);}
+
+footer {
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+footer .left, footer .right {font: 18px/60px thin; color: white; width: 200px; letter-spacing: -0.01em;}
+footer .left {float: left; width: 280px;}
+footer .left:before, footer .right:before  {
+	float: left;
+	content: "";
+	margin-right: 17px;
+}
+footer .left:before {
+	width: 20px;
+	height: 19px;
+	margin-top: 20px;
+	background: -53px 0 url('img/sprite.png') no-repeat;
+}
+footer .right {float: right;}
+footer .right:before {
+	width: 14px;
+	height: 24px;
+	margin-top: 18px;
+	background: -73px 0 url('img/sprite.png') no-repeat;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="line top"></div>
+	<div class="fakeinput">
+		<div class="icon"><span></span></div>
+		<div class="text">rusradiostars.ru</div>
+	</div>
+	<div class="line bottom"></div>
+	<div class="info"><img src="img/textinfo.png"></div>
+	<div class="logo"><span><img src="img/logo.png" alt="logo"></span></div>
+</div>
+<footer>
+	<div class="left"><a href="mailto:info@pr-solution.ru">info@pr-solution.ru</a></div>
+	<div class="right"><a href="tel:+74955140917">+7 (495) 514-09-17</a></div>
+</footer>
+</body>
+</html>

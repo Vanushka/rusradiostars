@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="542"
+     viewBox="0 0 360 542">
+    <defs>
+        <path id="zid7a"
+              d="M465 1235a6 6 0 0 1 6-6h292a6 6 0 0 1 6 6v182.85h-.13c-4.35 0-7.87 3.78-7.87 8.44s3.52 8.44 7.87 8.44h.13v83.48h-.13c-4.35 0-7.87 3.78-7.87 8.44s3.52 8.44 7.87 8.44h.13V1709a6 6 0 0 1-6 6H471a6 6 0 0 1-6-6v-182.35c0 4.66 3.52 8.44 7.87 8.44h.13v-16.88h-.13c-4.35 0-7.87 3.78-7.87 8.44V1426.3c0 4.66 3.52 8.44 7.87 8.44h.13v-16.88h-.13c-4.35 0-7.87 3.78-7.87 8.44z"/>
+        <mask id="zid7c" width="2" height="2" x="-1" y="-1">
+            <path fill="#fff" d="M465 1229h304v486H465z"/>
+            <use xlink:href="#zid7a"/>
+        </mask>
+        <filter id="zid7b" width="400" height="582" x="455" y="1219" filterUnits="userSpaceOnUse">
+            <feOffset dx="20" dy="20" in="SourceGraphic" result="FeOffset1468Out"/>
+            <feGaussianBlur in="FeOffset1468Out" result="FeGaussianBlur1469Out" stdDeviation="11.2 11.2"/>
+        </filter>
+    </defs>
+    <g>
+        <g transform="translate(-457 -1221)">
+            <g filter="url(#zid7b)">
+                <use fill="none" stroke-opacity=".34" stroke-width="0" mask="url(&quot;#zid7c&quot;)"
+                     xlink:href="#zid7a"/>
+                <use fill-opacity=".34" xlink:href="#zid7a"/>
+            </g>
+            <use fill="#fff" xlink:href="#zid7a"/>
+        </g>
+    </g>
+</svg>
